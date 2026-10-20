@@ -1,0 +1,26 @@
+{
+  "name": "mypoc-ecommerce-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev":     "vite --host 0.0.0.0 --port 3000",
+    "build":   "tsc && vite build",
+    "preview": "vite preview --port 3000",
+    "serve":   "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "express": "^4.21.0",
+    "http-proxy-middleware": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}

@@ -1,0 +1,17 @@
+# .dockerignore — prevents host junk from polluting container build context
+# Critical: node_modules must NEVER be copied from host into container
+# Container builds its own node_modules via npm install in Dockerfile
+
+frontend/node_modules
+frontend/dist
+**/__pycache__
+**/*.pyc
+**/*.pyo
+.env
+*.json
+!frontend/package.json
+!frontend/tsconfig.json
+!gcp_service_account.json
+logs/
+.git
+.gitignore

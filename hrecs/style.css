@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f5f9;
+    color: #1d2939;
+    font: 16px/1.5 system-ui, sans-serif;
+}
+
+.container {
+    width: min(1000px, 94%);
+    margin: 28px auto;
+}
+
+.topbar,
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card,
+fieldset,
+.education-row {
+    background: white;
+    border: 1px solid #d9e0e9;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+}
+
+fieldset {
+    min-width: 0;
+}
+
+legend {
+    font-weight: 700;
+    padding: 0 6px;
+}
+
+.grid,
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+    min-width: 0;
+}
+
+input,
+select {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #b9c3d0;
+    border-radius: 6px;
+    background: white;
+    color: inherit;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #2459c4;
+    outline-offset: 2px;
+}
+
+button,
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #1d4ed8;
+    border-radius: 6px;
+    background: #1d4ed8;
+    color: white;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.secondary,
+.button.secondary {
+    background: white;
+    color: #263449;
+    border-color: #b9c3d0;
+}
+
+.danger {
+    background: #b42332;
+    border-color: #b42332;
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.applicant-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    background: white;
+    border: 1px solid #d9e0e9;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 12px 0;
+}
+
+.applicant-card h2 {
+    margin-top: 0;
+}
+
+.applicant-card p {
+    overflow-wrap: anywhere;
+}
+
+.detail {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.detail strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.success {
+    background: #e7f7ed;
+    border: 1px solid #a6d9b6;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.error {
+    background: #fff0f0;
+    border: 1px solid #e5a4a4;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+@media (max-width: 600px) {
+    .grid,
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 16px auto;
+    }
+}
+
