@@ -5,7 +5,7 @@ This highlights the microservice tech stack for
 POC E-Commerce Sales Dashboard — AI powered by Claude (Anthropic) — Backend: FastAPI + MariaDB — Frontend: Vite + React TSX
 
 THE Sales Dashboard with AI Insights
-http://<localhost>/
+http://[localhost]/
 
 and 
 
@@ -13,7 +13,7 @@ PHP 8.4, in this proof of concept it shares one DB, make sure to save .env on yo
 local copy once you cloned this
 
 The CRUD HR Proof OF Concept
-http://<localhost>/hrecs
+http://[localhost]/hrecs
 
 .env
 # MariaDB — all inside container, connects via localhost
