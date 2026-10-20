@@ -1,7 +1,7 @@
 install docker https://docs.docker.com/compose/install/
 
 - Make sure docker is PROPERLY INSTALLED 
-- once cloned on yourfolder run docker compose config on that folder
+- once this code repository is cloned on yourfolder run docker compose config on that folder
 - docker compose up
 
 This highlights the microservice tech stack for
